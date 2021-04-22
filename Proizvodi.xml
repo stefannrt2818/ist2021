@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Prodavnica SYSTEM "Proizvodi.dtd">
+
+<Prodavnica>
+
+<Proizvod>
+    <Kategorija vrsta="Konzola"></Kategorija>
+    <Cena valuta="RSD">65999</Cena>
+    <Naziv>Konzola Sony PlayStation 5 - 825GB</Naziv>
+    <Tag>Koznola</Tag>
+    <Tag>Sony</Tag>
+    <Tag>PlayStation 5</Tag>
+    <Akcija cena="60999" datum="2021-05-01"></Akcija>
+</Proizvod>
+
+<Proizvod>
+    <Kategorija vrsta="Konzola"></Kategorija>
+    <Cena valuta="RSD">64999</Cena>
+    <Naziv>Konzola XBOX Series X 1TB</Naziv>
+    <Tag>Konzola</Tag>
+    <Tag>XBOX</Tag>
+    <Tag>Series X</Tag>
+    <Akcija cena="59999" datum="2021-05-01"></Akcija>
+</Proizvod>
+
+<Proizvod>
+    <Kategorija vrsta="Oprema"></Kategorija>
+    <Cena valuta="RSD">8999</Cena>
+    <Naziv>Gamepad PlayStation 5 DualSense</Naziv>
+    <Tag>Oprema</Tag>
+    <Tag>Gamepad</Tag>
+    <Tag>PlayStation 5</Tag>
+    <Tag>DualSense</Tag>
+    <Akcija cena="3999" datum="2021-04-23"></Akcija>
+</Proizvod>
+
+<Proizvod>
+    <Kategorija vrsta="Oprema"></Kategorija>
+    <Cena valuta="RSD">16999</Cena>
+    <Naziv>Gamepad Razer Wolverine v2</Naziv>
+    <Tag>Oprema</Tag>
+    <Tag>Gamepad</Tag>
+    <Tag>Razer</Tag>
+    <Tag>Wolverine</Tag>
+    <Akcija cena="11999" datum="2021-04-23"></Akcija>
+</Proizvod>
+
+<Proizvod>
+    <Kategorija vrsta="Igra"></Kategorija>
+    <Cena valuta="RSD">9999</Cena>
+    <Naziv>PS5 FIFA 21 - Next Level Edition</Naziv>
+    <Tag>Igra</Tag>
+    <Tag>PS5</Tag>
+    <Tag>Fifa 21</Tag>
+    <Akcija cena="4999" datum="2021-05-31"></Akcija>
+</Proizvod>
+
+<Proizvod>
+    <Kategorija vrsta="Igra"></Kategorija>
+    <Cena valuta="RSD">9499</Cena>
+    <Naziv>XBOX Series X NBA 2K21</Naziv>
+    <Tag>Igra</Tag>
+    <Tag>XBOX</Tag>
+    <Tag>Series X</Tag>
+    <Tag>NBA 2k21</Tag>
+    <Akcija cena="4999" datum="2021-05-31"></Akcija>
+</Proizvod>
+
+</Prodavnica>
