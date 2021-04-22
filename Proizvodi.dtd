@@ -1,0 +1,11 @@
+<!ELEMENT Prodavnica (Proizvod+)>
+<!ELEMENT Proizvod (Kategorija, Cena, Naziv, Tag+, Akcija+)>
+<!ELEMENT Kategorija EMPTY>
+<!ELEMENT Cena (#PCDATA)>
+<!ELEMENT Naziv (#PCDATA)>
+<!ELEMENT Tag (#PCDATA)>
+<!ELEMENT Akcija EMPTY>
+<!ATTLIST Kategorija vrsta (Konzola|Oprema|Igra) #REQUIRED>
+<!ATTLIST Cena valuta CDATA #FIXED "RSD">
+<!ATTLIST Akcija cena CDATA #IMPLIED>
+<!ATTLIST Akcija datum CDATA #IMPLIED>
