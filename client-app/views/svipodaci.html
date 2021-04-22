@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodavnica</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Zen Dots';
+        }
+
+        nav {
+            padding: 40px;
+            text-align: center;
+        }
+
+        nav a {
+            position: relative;
+            padding: 10px 30px;
+            margin: 0 15px;
+            color: #0bd3d3;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 20px;
+            overflow: hidden;
+            transition: 0.5s;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+        }
+
+        nav a:nth-child(1) {
+            filter: hue-rotate(115deg);
+        }
+
+        nav a:nth-child(3) {
+            filter: hue-rotate(115deg);
+        }
+
+        nav a:hover {
+            background: #0bd3d3;
+            color: #111;
+            box-shadow: 0 0 50px #0bd3d3;
+            transition-delay: 0.3s;
+        }
+
+        nav a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid #0bd3d3;
+            border-left: 2px solid #0bd3d3;
+            transition: 0.5s;
+            transition-delay: 0.1s;
+        }
+
+        nav a:hover:before {
+            width: 100%;
+            height: 100%;
+            transition-delay: 0s;
+        }
+
+        nav a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 10px;
+            height: 10px;
+            border-bottom: 2px solid #0bd3d3;
+            border-right: 2px solid #0bd3d3;
+            transition: 0.5s;
+            transition-delay: 0.1s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            height: 100%;
+            transition-delay: 0s;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        #formazafilter {
+            background: black;
+            color: white;
+            width: 40%;
+            justify-content: center;
+            text-align: center;
+            margin: auto;
+            margin-top: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px 5px #0bd3d3;
+        }
+
+        .data {
+            background: black;
+            color: white;
+            width: 40%;
+            justify-content: center;
+            margin: auto;
+            margin-top: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px 5px #FF7CFF;
+            text-align: center;
+        }
+
+        .data p {
+            text-align: left;
+            padding: 5px;
+            padding-left: 10px;
+        }
+
+        .data a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .data a:hover {
+            color: #FF7CFF;
+        }
+
+        select {
+            background-color: black;
+            color: #0bd3d3;
+        }
+
+        button {
+            padding: 5px;
+            background-color: black;
+            color: #0bd3d3;
+        }
+
+        .left {
+            text-align: left;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/">Pocetna</a>
+        <a href="/svipodaci">Prodavnica</a>
+        <a href="/dodajpodatke">Dodajte novi proizvod</a>
+    </nav>
+
+    <div id="formazafilter">
+        <form action="/filterpokategoriji" method="POST">
+            <label>Izaberite kategoriju za prikaz:</label>
+            <select name="kategorija" id="kategorija">
+                <option value="Konzola">Konzola</option>
+                <option value="Oprema">Oprema</option>
+                <option value="Igra">Igra</option>
+            </select>
+            <button type="submit">Primenite filter</button>
+        </form>
+    </div>
+    <div>
+        #{data}
+    </div>
+
+</body>
+
+</html>
